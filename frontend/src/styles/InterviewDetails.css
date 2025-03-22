@@ -1,0 +1,356 @@
+/* General Container Styling */
+.details-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    color: #333333;
+}
+
+/* Interview Title */
+.details-title {
+    text-align: center;
+    color: #333333;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+/* Company Name */
+.company-name {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #444444;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Company Image */
+.company-image-wrapper {
+    width: 40%;
+    max-width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 14px auto;
+    border: 3px solid #cccccc;
+}
+
+.company-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Interview Image */
+.details-image-wrapper {
+    width: 40%;
+    max-width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 14px auto;
+    border: 3px solid #cccccc;
+}
+
+.details-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Questions Section */
+.questions-section {
+    margin-top: 18px;
+}
+
+.questions-heading {
+    font-size: 1.4rem;
+    color: #555555;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Questions List */
+.questions-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Question Card */
+.question-card {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #cccccc;
+}
+
+/* Question Title */
+.question-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Question Content */
+.question-content {
+    color: #666666;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+/* Answer Content */
+.answer-content {
+    color: #444444;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+/* Syllabus Section */
+.syllabus-section {
+    margin-top: 20px;
+}
+
+.syllabus-heading {
+    font-size: 1.4rem;
+    color: #555555;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.syllabus-list {
+    list-style: none;
+    padding: 0;
+}
+
+.syllabus-item {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 6px solid #99c2ff;
+}
+
+/* Hiring Process Section */
+.hiring-process-section {
+    margin-top: 20px;
+}
+
+.hiring-heading {
+    font-size: 1.4rem;
+    color: #555555;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hiring-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hiring-step {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 6px solid #77dd77;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #e57373;
+    font-weight: bold;
+}
+
+/* Table Container */
+.table-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Heading */
+.table-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #d9534f;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+/* Modern Table */
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+.responsive-table thead {
+    color: rgb(117, 114, 114);
+}
+
+.responsive-table th, 
+.responsive-table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Alternate Row Colors */
+.responsive-table tbody tr:nth-child(even) {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover Effect */
+.responsive-table tbody tr:hover {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Question & Answer Section */
+.qa-section {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qa-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #2a2a72;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* Individual Q&A */
+.qa-item {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-left: 4px solid #ff914d;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qa-question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.qa-answer {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .details-container {
+        padding: 16px;
+    }
+
+    .details-title {
+        font-size: 1.8rem;
+    }
+
+    .company-name {
+        font-size: 1.3rem;
+    }
+
+    .company-image-wrapper,
+    .details-image-wrapper {
+        height: 150px;
+        width: 50%;
+    }
+
+    .questions-heading,
+    .syllabus-heading,
+    .hiring-heading {
+        font-size: 1.2rem;
+    }
+
+    .question-content,
+    .answer-content {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Tablets and Large Phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .details-container {
+        padding: 12px;
+    }
+
+    .details-title {
+        font-size: 1.7rem;
+    }
+
+    .company-name {
+        font-size: 1.2rem;
+    }
+
+    .company-image-wrapper,
+    .details-image-wrapper {
+        width: 55%;
+        height: 140px;
+    }
+
+    .questions-heading,
+    .syllabus-heading,
+    .hiring-heading {
+        font-size: 1.1rem;
+    }
+
+    .question-content,
+    .answer-content {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .details-container {
+        padding: 10px;
+    }
+
+    .details-title {
+        font-size: 1.5rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .company-image-wrapper,
+    .details-image-wrapper {
+        width: 65%;
+        height: 130px;
+    }
+
+    .questions-heading,
+    .syllabus-heading,
+    .hiring-heading {
+        font-size: 1rem;
+    }
+
+    .question-content,
+    .answer-content {
+        font-size: 0.75rem;
+    }
+}

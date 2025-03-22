@@ -1,0 +1,147 @@
+/* Container styling */
+.home-container {
+  padding: 15px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Responsive Grid Layout */
+.interview-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default for mobile */
+  gap: 15px;
+}
+
+@media (min-width: 640px) {
+  .interview-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .interview-grid {
+    grid-template-columns: repeat(3, 1fr); /* Small desktops */
+  }
+}
+
+@media (min-width: 1280px) {  
+  .interview-grid {
+    grid-template-columns: repeat(5, 1fr); /* Large desktops - 5 cards per row */
+  }
+}
+
+
+/* Interview Card Styling */
+.interview-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px; /* Smaller Curved corners */
+  overflow: hidden;
+  background: #f9f9f9;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  max-width: 280px;
+  margin: auto;
+}
+
+/* Opposite Corner Borders */
+.interview-card::before,
+.interview-card::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ff5722;
+  border-radius: 50%; /* Circular effect */
+  background: transparent;
+  z-index: 1;
+}
+
+/* Top-left border */
+.interview-card::before {
+  top: -10px;
+  left: -10px;
+  border-right: none;
+  border-bottom: none;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+/* Bottom-right border */
+.interview-card::after {
+  bottom: -10px;
+  right: -10px;
+  border-left: none;
+  border-top: none;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+/* Glowing Effect on Hover */
+.interview-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 6px 15px rgba(255, 87, 34, 0.3);
+}
+
+/* Image Styling */
+.interview-image-container {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.interview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for image */
+.interview-card:hover .interview-image {
+  transform: scale(1.08);
+}
+
+/* Text Content Below Image */
+.interview-content {
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 0 0 15px 15px;
+}
+
+.interview-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.interview-category {
+  color: #ff5722;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Button-style Interview Link */
+.interview-link {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #ff5722;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.interview-link:hover {
+  background: #e64a19;
+}

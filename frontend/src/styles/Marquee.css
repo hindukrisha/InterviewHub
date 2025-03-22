@@ -1,0 +1,66 @@
+/* General Marquee Styling */
+#marquee {
+    padding: 10px 0;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marqueeAnimation 20s linear infinite;
+    font-size: 1.5rem; /* Further reduced size for desktop users */
+    white-space: nowrap;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+/* Text Styling */
+.marquee-content span {
+    padding: 0 15px;
+    font-weight: bold;
+    color: #ec070b; /* Red color for attention */
+}
+
+/* Marquee Animation */
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Design */
+
+/* Large Desktop Screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .marquee-content {
+        font-size: 1rem; /* Further reduced for large desktops */
+    }
+}
+
+/* Tablets and Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .marquee-content {
+        font-size: 1rem;
+        font-style: oblique;
+    }
+}
+
+/* Small Tablets and Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .marquee-content {
+        font-size: 1.1rem;
+        font-style: oblique;
+    }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .marquee-content {
+        font-size: 1rem;
+        font-style: oblique;
+    }
+}
